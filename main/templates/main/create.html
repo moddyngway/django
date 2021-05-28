@@ -1,0 +1,15 @@
+{% extends "main/base.html" %}
+
+{% block title %}create{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div style="height: 70px"></div>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.title }} <br>
+        {{ form.task }} <br>
+        <button type="submit" class="btn btn-success">Добавить</button>
+    </form>
+</div>
+{% endblock %}
