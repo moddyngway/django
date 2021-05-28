@@ -1,4 +1,5 @@
 {% extends "main/base.html" %}
+{% load crispy_forms_tags %}
 
 {% block title %}create{% endblock %}
 
@@ -7,8 +8,8 @@
     <div style="height: 70px"></div>
     <form method="post">
         {% csrf_token %}
-        {{ form.title }} <br>
-        {{ form.task }} <br>
+        {{ form|crispy }}
+
         <button type="submit" class="btn btn-success">Добавить</button>
     </form>
 </div>

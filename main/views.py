@@ -29,5 +29,6 @@ def create(request):
     }
     return render(request, "main/create.html", context)
 
+
 def fumo(request):
     return render(request, "main/fumo.html")
