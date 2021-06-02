@@ -6,7 +6,8 @@
 {% block content %}
 <div class="container">
     <div style="height: 70px"></div>
-    <form method="post">
+    <form method="post" action="{% url 'create' %}">
+
         {% csrf_token %}
         {{ form|crispy }}
 
