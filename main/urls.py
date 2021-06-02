@@ -7,3 +7,4 @@ urlpatterns = [
     path('fumo/', views.fumo, name="fumo"),
     path('create/', views.create, name="create"),
 ]
+# hello world
